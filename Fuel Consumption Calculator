@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String args[])
+    {
+ 
+ 
+ 
+ 
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number of litres to fill the tank");
+        double litre=sc.nextDouble();
+        if(litre<0){
+            System.out.println("the litre is invalid");
+            return;
+ 
+        }
+        System.out.println("Enter the distance covered");
+        double distance=sc.nextDouble();
+        if(distance<0){
+            System.out.println("the distance  is invalid");
+            return;
+        }
+        double a;
+        a=litre/distance*100;
+ 
+ 
+        double miles=distance*0.6214;
+        double gallons=litre*0.2642;
+ 
+        double b;
+        b=miles/gallons;
+        System.out.println("Litres/100KM");
+        System.out.printf("%.2f\n",a);
+ 
+       System.out.println("Miles/gallons");
+        System.out.printf("%.2f",b);
+ 
+        }
+ 
+        }
