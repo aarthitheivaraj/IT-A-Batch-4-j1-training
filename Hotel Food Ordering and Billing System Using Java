@@ -1,0 +1,107 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the hotel name:");
+		String b=sc.nextLine().toUpperCase();
+		if(b.equals("KMS")){
+		    System.out.println("Menu Details:\njuice\nbriyani\ndessert");
+		}
+		System.out.println("Choose the item:");
+		String a=sc.nextLine().toLowerCase();
+		if(a.equals("juice")){
+		    System.out.println("mango juice Rs.20");
+		    System.out.println("Orange juice Rs.30");
+		    System.out.println("apple juice Rs.40");
+		    System.out.println("Watermelon Rs.25");
+		  System.out.println("Enter the juice name: ");
+		  String d=sc.nextLine().toLowerCase();
+		  System.out.println("Enter the quantity: ");
+		  int c=sc.nextInt();
+		 if(d.equals("mango")){
+		    int e=c*20;
+		   System.out.println(e); 
+		 }
+		 else if(d.equals("orange")){
+		     int e=c*30;
+		     System.out.println(e);
+		 }
+		 else if(d.equals("apple")){
+		     int e=c*40;
+		     System.out.println(e);
+		 }
+		 else if(d.equals("watermelon")){
+		     int e=c*25;
+		     System.out.println(e);
+		 }
+		 else{
+		    System.out.println("Not found"); 
+		 }
+		}
+		 
+		else if(a.equals("briyani")){
+		    System.out.println("mutton briyani Rs.200");
+		    System.out.println("chicken briyani Rs.120");
+		    System.out.println("fish briyani Rs.150");
+		     System.out.println("Enter the briyani name: ");
+		     String d=sc.nextLine().toLowerCase();
+		  System.out.println("Enter the quantity: ");
+		  int c=sc.nextInt();
+		  if(d.equals("mutton briyani")){
+		    int e=c*200;
+		   System.out.println(e); 
+		 }
+		 else if(d.equals("chicken briyani")){
+		     int e=c*120;
+		     System.out.println(e);
+		 }
+		 else if(d.equals("fish briyani")){
+		     int e=c*150;
+		     System.out.println(e);
+		 }
+		 
+		 else{
+		    System.out.println("Not found"); 
+		 }
+		}
+		    
+		    
+		
+		else if(a.equals("dessert")) {
+		    System.out.println("chocolate Rs.30\nice creame Rs.15\nbrownie Rs.20\ngulab jamun Rs.20");
+		    System.out.println("Enter the dessert name: ");
+		    String d=sc.nextLine().toLowerCase();
+		  System.out.println("Enter the quantity: ");
+		  int c=sc.nextInt();
+		  if(d.equals("chocolate")){
+		    int e=c*30;
+		   System.out.println(e); 
+		 }
+		 else if(d.equals("ice creame")){
+		     int e=c*15;
+		     System.out.println(e);
+		 }
+		 else if(d.equals("brownie")){
+		     int e=c*20;
+		     System.out.println(e);
+		 }
+		 else if(d.equals("gulab jamun")){
+		     int e=c*30;
+		 }
+		 
+		 else{
+		    System.out.println("Not found"); 
+		 }
+		}
+		    
+		    
+		    
+		
+		else{
+		    System.out.println("Not found");
+		}
+		
+	}
+}
