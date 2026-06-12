@@ -4,23 +4,14 @@ class Main {
     public static void main(String args[]) {
 
         Scanner sc = new Scanner(System.in);
-        int sum=0;
+ 
         System.out.print("Enter a character: ");
-        char ch = sc.next().charAt(0);
+        ch = sc.next().charAt(0);
 
  
-        if(ch <= 'A' && ch >= 'Z'){
- 
-                  sum=ch+32;
- 
-        }
-        else {
-            sum=ch;
-        }
-        System.out.println(sum);
- 
- 
+        char result = (ch >= 'A' && ch <= 'Z') ? (char)(ch + 32) : ch;
 
- 
+        System.out.println("Lowercase character: " + result);
+        System.out.println("Ascii value: " + (int)result);
     }
 }
